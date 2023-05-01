@@ -18,7 +18,6 @@ function App() {
                         <h1 className="title">
                             Favourite Animal  <span className="badge bg-danger rounded-pill">{totalLikes}</span>
                         </h1>
-
                     </span>
                 </div>
             </nav>
