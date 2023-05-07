@@ -5,7 +5,7 @@ const options = {
     params: {
         q: '',
         pageNumber: '1',
-        pageSize: '25',
+        pageSize: '100',
         autoCorrect: 'true'
     },
     headers: {

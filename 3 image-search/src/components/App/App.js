@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Search from '../Search/Search';
 import ImageList from '../ImageList/ImageList';
+import Overview from '../Overview/Overview';
 
 import { searchImage } from '../../api/searchService';
 function App() {
@@ -17,16 +18,31 @@ function App() {
         setImages(response.value)
         setTotalResultsCount(response.totalCount);
     }
+    function openOverview() {
+        document.getElementById('overviewModal').classList.add('is-active');
+        (document.querySelectorAll('.modal-background, .delete, .modal-card-foot .button') || []).forEach(($close) => {
+            const $target = $close.closest('.modal');
+
+            $close.addEventListener('click', () => {
+                document.getElementById('overviewModal').classList.remove('is-active');
+            });
+        });
+    }
 
     return (
         <section className="hero is-fullheight">
             <div className="hero-head">
-                <nav className="navbar">
-                    <div className="container">
+                <nav className="navbar ">
+                    <div className="container notification">
                         <div className="navbar-brand">
                             <h1 className="is-size-1 has-text-link">Image Search</h1>
                         </div>
-                        <div className="navbar-menu"></div>
+                        <div className="navbar-menu">
+                            <div className="navbar-end">
+                                <a className="navbar-item">Github</a>
+                                <a onClick={openOverview} className="navbar-item">Overview</a>
+                            </div>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -44,15 +60,8 @@ function App() {
                 </div>
 
             </div>
-            <div className="hero-foot">
-                <nav className="tabs">
-                    <div className="container">
-                        <ul>
-                            <li className="is-active"><a>Github</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+
+            <Overview></Overview>
 
         </section>
 
