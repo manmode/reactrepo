@@ -39,7 +39,7 @@ function App() {
                         </div>
                         <div className="navbar-menu">
                             <div className="navbar-end">
-                                <a className="navbar-item">Github</a>
+                                <a href="https://github.com/manmode/reactrepo/tree/main/3%20image-search" target="_blank" className="navbar-item">Github</a>
                                 <a onClick={openOverview} className="navbar-item">Overview</a>
                             </div>
                         </div>
