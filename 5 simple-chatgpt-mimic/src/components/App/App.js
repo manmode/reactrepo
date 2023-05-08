@@ -12,9 +12,9 @@ function App() {
     }
     return (
         <div className="container-fluid bg-dark bg-gradient text-center">
-            <nav class="navbar bg-body-transparent">
-                <div class="container opacity-50">
-                    <h1 class="navbar-brand text-success fs-2" href="#">Chatgpt</h1>
+            <nav className="navbar bg-body-transparent">
+                <div className="container opacity-50">
+                    <h1 className="navbar-brand text-success fs-2" href="#">Chatgpt</h1>
                 </div>
             </nav>
             <div className="row min-vh-100 justify-content-md-center">

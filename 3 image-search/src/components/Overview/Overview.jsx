@@ -8,7 +8,7 @@ export default function Overview() {
                     <button className="delete" aria-label="close"></button>
                 </header>
                 <section className="modal-card-body">
-                    <div class="content">
+                    <div className="content">
                         <ul>
                             <li>Components</li>
                             <ul>

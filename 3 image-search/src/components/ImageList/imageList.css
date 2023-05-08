@@ -1,0 +1,17 @@
+.image-list {
+    columns: 6 200px;
+    column-gap: 10px;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+img:hover {
+    /* border: 1px solid grey; */
+    border-radius: 0;
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.5s;
+}

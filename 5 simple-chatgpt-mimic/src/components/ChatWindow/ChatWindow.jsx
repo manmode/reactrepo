@@ -37,7 +37,7 @@ function ChatWindow() {
     return (
         <>
             <div className="chat-panel m-0 h-75">
-                <div class="form-floating">
+                <div className="form-floating">
                     <textarea
                         value={responses}
                         className="h-100 form-control bg-success bg-opacity-25 text-white"
@@ -47,7 +47,7 @@ function ChatWindow() {
             </div>
             <div className="input-group my-1">
                 <span className="input-group-text" id="commandInput">Command</span>
-                <input type="text" class="form-control" onKeyDown={handleCommandChange}></input>
+                <input type="text" className="form-control" onKeyDown={handleCommandChange}></input>
             </div>
         </>
     )
